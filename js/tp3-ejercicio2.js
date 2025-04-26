@@ -16,57 +16,57 @@ Output: El arreglo de ciudades tiene 10 elementos:
 
 const ciudades = [];
 
-function mostrarArray(titulo){
+function mostrarArray(titulo) {
     document.writeln(`<h5 class="subtitulo"><b>🚀 ${titulo}</b></h5>`);
-    if(ciudades.length === 0 ){
+    if (ciudades.length === 0) {
         return;
     }
     document.writeln(`<ul>`)
-    for(let i = 0; i < ciudades.length; i++){
-        document.writeln(`<li class = "ms-3">ciudades[${i+1}]: ${ciudades[i]}</li>`);
+    for (let i = 0; i < ciudades.length; i++) {
+        document.writeln(`<li class = "ms-3">ciudades[${i + 1}]: ${ciudades[i]}</li>`);
     }
     document.writeln(`</ul>`);
 }
 
 document.writeln(`<h2 class="titulo">Array de Ciudades</h2>`);
 
-do{
+do {
     const ciudad = prompt(`Ingresa el nombre de una ciudad: `);
     ciudades.push(ciudad);
-}while(confirm("¿Deseas agregar otra ciudad?"));
+} while (confirm("¿Deseas agregar otra ciudad?"));
 
 document.writeln(`<b><h5 class= "subtitulo">🚀 Longitud del Arreglo de Ciudades:</b</h5> ${ciudades.length}<br>`);
 
-if(!ciudades[0]){
+if (!ciudades[0]) {
     document.writeln("<h5 class = 'subtitulo'>🚀 El array no tiene elementos.</h5>");
-}else{
+} else {
     document.writeln(`<h5 class= "subtitulo">🚀 Elemento de la primera posición del array: ${ciudades[0]}</h5>`);
 }
 
-if(!ciudades[2]){
+if (!ciudades[2]) {
     document.writeln("<h5 class = 'subtitulo'>🚀 El array no incluye un elemento que ocupe la tercera posición.</h5>");
 }
-else{
+else {
     document.writeln(`<h5 class= "subtitulo">🚀 Elemento de la tercera posición del array: ${ciudades[2]}</h5>`);
 }
 
-if(!ciudades[ciudades.length - 1]){
+if (!ciudades[ciudades.length - 1]) {
     document.writeln("<h5 class = 'subtitulo'>🚀 El array no incluye un elemento que ocupe la última posición.</h5>");
 }
-else{
+else {
     document.writeln(`<h5 class= "subtitulo">🚀 Elemento de la última posición del array: ${ciudades[ciudades.length - 1]}</h5>`);
 }
 
 ciudades.push("'Paris, Francia'");
 mostrarArray(`Array con la ciudad "Paris" agregada al final: `);
 
-if(!ciudades[1]){
+if (!ciudades[1]) {
     document.writeln("<h5 class = 'subtitulo'>🚀 El array no incluye un elemento que ocupe la segunda posición.</h5>");
-}else{
+} else {
     document.writeln(`<h5 class= "subtitulo">🚀 Elemento de la segunda posición del array: ${ciudades[1]}</h5>`);
 }
 
-if(ciudades[1]){
+if (ciudades[1]) {
     ciudades[1] = "Barcelona";
 }
 mostrarArray("Array con la segunda posición reemplazada por Barcelona");
