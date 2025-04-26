@@ -10,7 +10,7 @@ const apariciones = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 document.writeln(`<table class="tablaDados m-auto">`);
 document.writeln(
-    `<thead><th class="celdas">Dados</th><th class="celdas">Apariciones</th></thead>`
+    `<thead><th class="celdas">Suma 🎲</th><th class="celdas">Apariciones</th></thead>`
 );
 
 document.writeln(`<tbody>`);
