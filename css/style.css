@@ -1,3 +1,10 @@
 .titulo{
     color: aqua;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subtitulo{
+    color: rgb(178, 255, 229);
+    margin-bottom: 20px;
 }
